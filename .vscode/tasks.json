@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++ -g ${workspaceFolder}/Display/flow.cpp -o ${workspaceFolder}/Display/sfml_app -lsfml-graphics -lsfml-window -lsfml-system && ${workspaceFolder}/Display/sfml_app",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/Display"
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
